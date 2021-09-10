@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A31622D-9653-4B5C-B2BA-D6D6891EDB78}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>metroticketms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WindowsFormsApplication1.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addminlogin.Designer.cs">
+      <DependentUpon>Addminlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewAmdn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewAmdn.Designer.cs">
+      <DependentUpon>AddNewAmdn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewStation.Designer.cs">
+      <DependentUpon>AddNewStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewTrain.Designer.cs">
+      <DependentUpon>AddNewTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddminHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddminHomePage.Designer.cs">
+      <DependentUpon>AddminHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Balanceenquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balanceenquiry.Designer.cs">
+      <DependentUpon>Balanceenquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookTicket.Designer.cs">
+      <DependentUpon>BookTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmTickets.Designer.cs">
+      <DependentUpon>ConfirmTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBMetroDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBMetroDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBMetroDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBMetroDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBMetroDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBMetroDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Findfairandroute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Findfairandroute.Designer.cs">
+      <DependentUpon>Findfairandroute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssueCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueCard.Designer.cs">
+      <DependentUpon>IssueCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDBModule.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RechargeMetroCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RechargeMetroCard.Designer.cs">
+      <DependentUpon>RechargeMetroCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReplyComplaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReplyComplaint.Designer.cs">
+      <DependentUpon>ReplyComplaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestMetroCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestMetroCard.Designer.cs">
+      <DependentUpon>RequestMetroCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowCardData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowCardData.Designer.cs">
+      <DependentUpon>ShowCardData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Complaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complaint.Designer.cs">
+      <DependentUpon>Complaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timetable.Designer.cs">
+      <DependentUpon>Timetable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateFairDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateFairDetail.Designer.cs">
+      <DependentUpon>UpdateFairDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCardRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCardRequest.Designer.cs">
+      <DependentUpon>ViewCardRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewComplaints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewComplaints.Designer.cs">
+      <DependentUpon>ViewComplaints.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Addminlogin.resx">
+      <DependentUpon>Addminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewAmdn.resx">
+      <DependentUpon>AddNewAmdn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewStation.resx">
+      <DependentUpon>AddNewStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewTrain.resx">
+      <DependentUpon>AddNewTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddminHomePage.resx">
+      <DependentUpon>AddminHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balanceenquiry.resx">
+      <DependentUpon>Balanceenquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookTicket.resx">
+      <DependentUpon>BookTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmTickets.resx">
+      <DependentUpon>ConfirmTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Findfairandroute.resx">
+      <DependentUpon>Findfairandroute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueCard.resx">
+      <DependentUpon>IssueCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RechargeMetroCard.resx">
+      <DependentUpon>RechargeMetroCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReplyComplaint.resx">
+      <DependentUpon>ReplyComplaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestMetroCard.resx">
+      <DependentUpon>RequestMetroCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowCardData.resx">
+      <DependentUpon>ShowCardData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Complaint.resx">
+      <DependentUpon>Complaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timetable.resx">
+      <DependentUpon>Timetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateFairDetail.resx">
+      <DependentUpon>UpdateFairDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCardRequest.resx">
+      <DependentUpon>ViewCardRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewComplaints.resx">
+      <DependentUpon>ViewComplaints.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DBMetroDataSet.xsc">
+      <DependentUpon>DBMetroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBMetroDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBMetroDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBMetroDataSet.xss">
+      <DependentUpon>DBMetroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBMetroDataSet1.xsc">
+      <DependentUpon>DBMetroDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBMetroDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBMetroDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBMetroDataSet1.xss">
+      <DependentUpon>DBMetroDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBMetroDataSet2.xsc">
+      <DependentUpon>DBMetroDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DBMetroDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBMetroDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBMetroDataSet2.xss">
+      <DependentUpon>DBMetroDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="home.Designer.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBMetro.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\login.jpg" />
+    <None Include="Resources\is %288%29.jpg" />
+    <None Include="Resources\ismi.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
